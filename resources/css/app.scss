@@ -1,0 +1,39 @@
+/* purgecss start ignore */
+@tailwind base;
+
+@tailwind components;
+/* purgecss end ignore */
+
+.form-input {
+    @apply block w-full bg-gray-100 border border-gray-200 rounded px-5 py-3 leading-tight text-gray-800
+}
+.form-input:focus {
+    @apply bg-white
+}
+.form-input-group {
+    @apply relative block
+}
+.form-input-icon {
+    @apply absolute inset-y-0 left-0 pl-2 flex items-center
+}
+.form-input-icon > svg {
+    @apply h-5 w-5 fill-current text-gray-400 z-10
+}
+
+.form-radio-group {
+    @apply relative flex items-center
+}
+.form-radio-group > input[type="radio"] {
+    @apply absolute opacity-0 pointer-events-none
+}
+.form-radio-indicator {
+    @apply h-6 w-6 bg-gray-100 border border-gray-200 rounded-full
+}
+.form-radio-group > input[type="radio"]:checked + .form-radio-indicator {
+    @apply border-8 border-blue-700
+}
+.input-error-border input {
+    @apply border-red-600
+}
+
+@tailwind utilities;
