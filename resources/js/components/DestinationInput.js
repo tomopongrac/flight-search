@@ -16,6 +16,7 @@ function renderSuggestionsContainer({containerProps, children, query}) {
             position: 'absolute',
             backgroundColor: '#fff',
             zIndex: '20',
+            width: '100%'
         }} {...containerProps}>
             {children}
         </div>
@@ -29,7 +30,7 @@ const getSuggestionValue = suggestion => `${suggestion.name} (${suggestion.code}
 
 // Use your imagination to render suggestions.
 const renderSuggestion = suggestion => (
-    <div>
+    <div className="py-3 border-b border-l border-r pl-8">
         {suggestion.name} ({suggestion.code})
     </div>
 );
