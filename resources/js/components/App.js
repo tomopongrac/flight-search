@@ -131,7 +131,6 @@ class App extends React.Component {
                 errors[key] = error;
             }
         });
-        console.log(errors);
         this.setState({
             errors: errors,
         });
