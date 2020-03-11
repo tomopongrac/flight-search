@@ -14,4 +14,4 @@ services:
             - "13306:3306"
         environment:
             - MYSQL_DATABASE=flight_search
-            - MYSQL_ROOT_PASSWORD=
+            - MYSQL_ROOT_PASSWORD=password
