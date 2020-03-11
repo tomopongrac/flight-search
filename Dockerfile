@@ -10,6 +10,6 @@ RUN chmod +x /usr/local/bin/composer-installer \
     && chmod +x /usr/local/bin/composer \
     && composer --version
 RUN docker-php-ext-install pdo_mysql \
-        && a2enmod rewrite negotiation
+        && a2enmod rewrite negotiation \
         && apt-get update \
         && apt-get install zip unzip
